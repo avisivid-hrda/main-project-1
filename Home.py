@@ -1,8 +1,6 @@
 import streamlit as st
 import pandas as pd
-
 import os
-import pandas as pd
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 file_path = os.path.join(BASE_DIR, "data/final/master_football_engineered.csv")
@@ -142,6 +140,34 @@ st.markdown("""
         font-size: 0.98rem;
         line-height: 1.6;
     }
+            
+    section[data-testid="stSidebar"] {
+    background-color: #0E1117;
+    }
+
+    section[data-testid="stSidebar"] * {
+    color: #F5F5F5;
+    }
+            
+    html, body, [data-testid="stAppViewContainer"], [data-testid="stHeader"] {
+    background-color: #0E1117;
+    }
+            
+    div[data-baseweb="select"] > div {
+    background-color: #161B22 !important;
+    color: #F5F5F5 !important;
+    }
+
+    div[data-baseweb="select"] input {
+    color: #F5F5F5 !important;
+    -webkit-text-fill-color: #F5F5F5 !important;
+    }
+            
+    div[data-baseweb="select"] svg {
+    fill: #F5F5F5 !important;
+    color: #F5F5F5 !important;
+    opacity: 1 !important;
+    }
 </style>
 """, unsafe_allow_html=True)
 
@@ -163,7 +189,7 @@ st.markdown(
 # Top metrics
 # ---------------------------
 col1, col2, col3 = st.columns(3)
-col4, col5 = st.columns(2)
+col4, col5, col6 = st.columns(3)
 
 with col1:
     st.markdown(f"""
@@ -209,6 +235,9 @@ with col5:
         <div class="metric-value">{format_currency_millions(avg_transfer_spending)}</div>
     </div>
     """, unsafe_allow_html=True)
+
+with col6:
+    st.empty()
 
 # ---------------------------
 # Optional intro panel
