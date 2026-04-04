@@ -5,7 +5,7 @@ import pandas as pd
 from utils import (inject_css, load_data, section_header, insight, divider,
                    flourish_embed, apply_template, LEAGUE_COLORS, LEAGUE_LABELS)
 
-st.set_page_config(page_title="Titles, Top 4 & Relegation", page_icon="⚽", layout="wide")
+st.set_page_config(page_title="Spending vs Titles", page_icon="⚽", layout="wide")
 inject_css()
 
 st.markdown("""
