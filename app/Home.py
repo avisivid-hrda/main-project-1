@@ -1,5 +1,6 @@
 import streamlit as st
 import plotly.graph_objects as go
+from pathlib import Path
 from utils import (inject_css, load_data, divider, LEAGUE_COLORS, LEAGUE_LABELS, apply_template)
 
 st.set_page_config(
@@ -45,7 +46,10 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-st.image("../assets/banner.png", use_container_width=True)
+BASE_DIR = Path(__file__).resolve().parent.parent
+banner_path = BASE_DIR / "assets" / "banner.png"
+
+st.image(str(banner_path), use_container_width=True)
 
 df = load_data()
 

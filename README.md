@@ -1,4 +1,4 @@
-# 📊 The Price of Victory - Does Financial Power drive Success in European Football?
+# 🏆 The Price of Victory - Does Financial Power drive Success in European Football?
 
 This project analyses a decade of financial and performance data, between 2014-2024, across Europe's top 5 leagues - the Premier League, La Liga, Serie A, Bundesliga, and Ligue 1, to understand how Squad Value and Transfer Spending relate to performance outcomes.
 
@@ -78,4 +78,4 @@ football-finance-analysis/
 
 ## 🔗 Link to the detailed presentation
 
-[Click here to view the presentation with detailed analysis, insights and business applications] https://canva.link/q9h5z97x4zk6yej
+[Click here to view the presentation with detailed analysis, insights and business applications](https://canva.link/q9h5z97x4zk6yej)
